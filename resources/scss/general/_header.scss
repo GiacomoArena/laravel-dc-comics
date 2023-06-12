@@ -1,0 +1,45 @@
+header{
+    .container{
+        height: 100px;
+        color: $secondary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 70px;
+        }
+        ul{
+            display: flex;
+        }
+        a{
+            position: relative;
+            padding: 15px;
+            font-weight: 500;
+            color: $secondary-color;
+            text-transform: uppercase;
+
+        }
+        span{
+            right: 35%;
+            top: 13px;
+            height: 0;
+            position: absolute;
+            color: $primary-color;
+            font-size: 60px;
+            opacity: 0;
+        }
+        a:hover{
+            color: $primary-color;
+        }
+        a:hover span{
+            opacity: 1;
+        }
+        a.active span,
+        a.active{
+            color: $primary-color;
+            opacity: 1;
+        }
+
+    }
+
+}
