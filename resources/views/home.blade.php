@@ -8,6 +8,6 @@
 <main>
 
     <div class="main-container">
-
+        <h1 class="text-center my-5">Home</h1>
 </main>
 @endsection

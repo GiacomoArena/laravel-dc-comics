@@ -1,6 +1,4 @@
-@php
-    $header_menu = config('menu_links.headerMenu')
-@endphp
+
 <header>
 
     <div class="container">
@@ -11,10 +9,10 @@
                     <a class="nav-link" >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Elenco Prodotti</a>
+                    <a class="nav-link" href="{{ route('comics') }}">Comics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Contatti</a>
+                    <a class="nav-link" >Contacts</a>
                 </li>
             </ul>
         </section>
