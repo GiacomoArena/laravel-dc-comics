@@ -24,9 +24,6 @@
             </tbody>
         </table>
 
-        <div>
-            {{ $pastas->links() }}
-        </div>
 
     </div>
 @endsection
