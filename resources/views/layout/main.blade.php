@@ -18,13 +18,9 @@
 <body>
 
     @include('partials.header')
-    @include('partials.jumbotron')
 
     @yield('content')
 
-
-    @include('partials.footer_link')
-    @include('partials.footer_contact')
 
 </body>
 
