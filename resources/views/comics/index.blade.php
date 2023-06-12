@@ -10,7 +10,6 @@
                     <th scope="col">Title</th>
                     <th scope="col">series</th>
                     <th scope="col">price</th>
-                    <th scope="col">description</th>
                 </tr>
             </thead>
             <tbody>
@@ -19,6 +18,7 @@
                         <td>{{ $comic->id }}</td>
                         <td>{{ $comic->title }}</td>
                         <td>{{ $comic->series }}</td>
+                        <td>{{ $comic->price }}</td>
                     </tr>
                 @endforeach
             </tbody>
