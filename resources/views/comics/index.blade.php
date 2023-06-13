@@ -22,6 +22,20 @@
                         <td>{{ $comic->price }}</td>
                         <td>
                             <a href="{{ route('comics.show', $comic) }}" class="btn btn-success">Go</a>
+                            <a href="{{ route('comics.edit', $comic) }}" class="btn btn-primary" title="Edit"><i
+                                    class="fa-solid fa-pencil"></i></a>
+
+                            <form class="d-inline" action="{{ route('comics.destroy', $comic) }}"
+                                method="POST"
+                                onsubmit="return confirm('Confermi l\'eliminazione del prodotto:  {{ $comic->title }} ?')">
+
+                                @csrf
+
+                                @method('DELETE')
+
+                                <button type="submit" class="btn btn-danger"><i
+                                class="fa-solid fa-eraser"></i></button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach
