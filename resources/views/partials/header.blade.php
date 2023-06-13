@@ -12,7 +12,7 @@
                     <a class="nav-link" href="{{ route('comics.index') }}">Comics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" >Contacts</a>
+                    <a class="nav-link" href="{{ route('comics.create') }}">Create new product</a>
                 </li>
             </ul>
         </section>

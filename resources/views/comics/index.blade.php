@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-    <div>
+    <div class="container">
         <h1 class="my-3">Comics</h1>
         <table class="table">
             <thead>
@@ -10,6 +10,7 @@
                     <th scope="col">Title</th>
                     <th scope="col">series</th>
                     <th scope="col">price</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
